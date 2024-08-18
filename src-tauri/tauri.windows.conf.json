@@ -1,0 +1,16 @@
+{
+  "tauri": {
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true
+    },
+    "updater": {
+      "active": true,
+      "endpoints": [
+        "https://cdn.xxx.com/releases/manifest.json"
+      ],
+      "dialog": true,
+      "pubkey": ""
+    }
+  }
+}

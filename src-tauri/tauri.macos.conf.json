@@ -1,0 +1,16 @@
+{
+  "tauri": {
+    "systemTray": {
+      "iconPath": "icons/icon.ico",
+      "iconAsTemplate": true
+    },
+    "updater": {
+      "active": true,
+      "endpoints": [
+        "https://cdn.xxx.com/releases/manifest_mac.json"
+      ],
+      "dialog": true,
+      "pubkey": "xxx"
+    }
+  }
+}

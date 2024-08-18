@@ -1,0 +1,97 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run frondend:dev",
+    "beforeBuildCommand": "npm run frondend:build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "MultipleSearch",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "path": {
+        "all": true
+      },
+      "os": {
+        "all": true
+      },
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "dialog": {
+        "all": true,
+        "ask": true,
+        "confirm": true,
+        "message": true,
+        "open": true,
+        "save": true
+      },
+      "window": {
+        "setAlwaysOnTop": true,
+        "create": true,
+        "setPosition": true,
+        "setFocus": true,
+        "show": true,
+        "hide": true
+      },
+      "globalShortcut": {
+        "all": true
+      },
+      "fs": {
+        "scope": [
+          "$APPDATA/**/*",
+          "$APPCACHE/**/*"
+        ]
+      },
+      "protocol": {
+        "assetScope": [
+          "$APPDATA/**/*",
+          "$APPCACHE/**/*"
+        ]
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": [
+        "msi",
+        "dmg",
+        "updater"
+      ],
+      "identifier": "com.zoboat.MultipleSearch",
+      "publisher": "zoboat",
+      "copyright": "©2024 zoboat",
+      "category": "Productivity",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "windows": {
+        "webviewInstallMode": {
+          "type": "embedBootstrapper"
+        },
+        "wix": {
+          "language": [
+            "en-US",
+            "zh-CN"
+          ],
+          "bannerPath": "",
+          "dialogImagePath": ""
+        },
+        "digestAlgorithm": "sha256",
+        "certificateThumbprint": "a5e48cd90ffac315f4b73954c418bdf7d54bd9d9",
+        "timestampUrl": "http://timestamp.digicert.com/"
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": []
+  }
+}
