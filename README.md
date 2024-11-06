@@ -1,4 +1,4 @@
-# Tauri + React + Typescript
+# Tauri + React + Typescript 项目模版
 
 This template should help get you started developing with Tauri, React and Typescript in Vite.
 
